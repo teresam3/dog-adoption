@@ -14,11 +14,10 @@ app.use(express.json());
 
 // HTML Routes
 // =============================================================
-require("./routes/htmlRoutes")(app);
+require("./assets/notes")(app);
+require("./assets/*")(app);
 
-// API Routes
-// =============================================================
-//require("./routes/apiRoutes")(app);
+require("./api/notes")(app);
 
 // Listener
 // =============================================================
