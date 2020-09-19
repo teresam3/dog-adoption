@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const heroku = require("heroku")
 
 // Sets up Express
 // =============================================================
@@ -17,7 +18,7 @@ app.use(express.json());
 require("./assets/notes")(app);
 require("./assets/*")(app);
 
-require("./api/notes")(app);
+//require("./api/notes")(app);
 
 // Listener
 // =============================================================
